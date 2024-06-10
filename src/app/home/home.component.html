@@ -1,0 +1,15 @@
+<!-- 
+
+  #filter esta sendo passado para o metodo filteredResults() que esta no arquivo home.component.ts
+  #filter.value esta pegando o valor do input e passando para   filteredResults() que esta no arquivo home.component.ts
+ -->
+<section>
+  <form>
+    <input  type="text" placeholder="Filter by city" #filter />
+    <button class="primary" type="button" (click)="filteredResults(filter.value)">Search</button>
+  </form>
+</section>
+<section class="results">
+  
+  <app-housing-location *ngFor="let housingLocation of filteredLocationList" [housingLocation]="housingLocation"></app-housing-location>
+</section>
