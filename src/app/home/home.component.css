@@ -8,7 +8,7 @@
 }
 input[type="text"] {
   outline: none;
-  border: solid 1px var(--primary-color);
+  border: solid 2px #0f883c;
   padding: 10px;
   border-radius: 8px;
   margin-right: 4px;

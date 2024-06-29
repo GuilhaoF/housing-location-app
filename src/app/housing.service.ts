@@ -19,14 +19,8 @@ export class HousingService {
     return (await data.json()) ?? {};
   }
   submitApplication(firstName: string, lastName: string, email: string, filhos: number) {
-    console.table({
-      "Vaga Reservada de": {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        filhos: filhos
-      }
-    });
+    alert(JSON.stringify({ firstName, lastName, email, filhos }));
+    
   }
 
 
